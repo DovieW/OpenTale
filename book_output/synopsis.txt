@@ -1,0 +1,226 @@
+# Project Oracle
+
+## Genre
+
+Survival Thriller / Science Fiction (competence-forward, dark escalation, dry humor)
+
+## Logline
+
+In 1966, a pragmatic structural engineer vanishes from a city square after a stranger speaks his name and delivers a single unsettling line—then wakes in the Late Stone Age with an impossible “oracle” in his skull: a literal, emotionless AI that can provide any technical knowledge if he asks precisely. To survive predators, weather, hunger, and suspicious tribes, he must build not just tools and shelters, but trust—while confronting a rival “magician” whose own Oracle has turned progress into control.
+
+## Core Promise
+
+A hard-survival, engineering-driven story where “fast-forwarding civilization” is not a montage but a brutal chain of bottlenecks and consequences—and where the ultimate advantage is not technology, but community.
+
+NOTE: Reference material has been broken out into separate files:
+
+-   World and setting details (including Oracle rules): `book_output/world.txt`
+-   Character reference profiles: `book_output/characters.txt`
+
+* * *
+
+# Thematic Spine
+
+**Information accelerates tools; it does not replace wisdom.** Elias can import blueprints, but he cannot “import” trust, intuition, or empathy. His core flaw is simple and costly: **he trusts systems more than people.** The story’s arc is Elias learning to stop outsourcing judgment and to build human infrastructure—loyalty, shared meaning, and leadership—alongside physical infrastructure.
+
+* * *
+
+# Synopsis
+
+## Act I — The Ghost in the Flint (Immediate Survival + First Contact)
+
+### Inciting Event (1966)
+
+Elias Mercer, a disciplined but socially isolated structural engineer, is walking through a busy city square in 1966 when a composed stranger steps into his path and speaks his name as if he’s been expected. The man says something cryptic—half warning, half invitation:
+
+“When the voice arrives, don’t ask for salvation. Ask for constraints.”
+
+Elias turns away. The world stutters—sound drops, edges blur—and he collapses into darkness.
+
+He wakes in a dense primeval forest, alone, overdressed for the wild, surrounded by unfamiliar birdsong and the distant call of something large. His first instinct is injury and hallucination. Then a voice speaks inside his skull—flat, precise, inhuman. Elias thinks it’s concussion, “radio,” or some classified medical experiment. The voice does not argue. It requests parameters.
+
+### Survival Trials (and the first humor beats)
+
+Dehydration and exposure hit immediately. Elias tries to use the voice for help and discovers the first brutal law: it is an oracle, not a rescuer.
+
+-   He asks, “How do I make fire?” Oracle replies with chemical requirements, failure modes, and safety warnings—none of which put tinder in his hands.
+-   He asks vague questions and gets technically correct answers that are practically useless.
+-   Under stress, his “spoken thoughts” become sloppy, and Oracle’s output becomes dangerously literal.
+
+Oracle settles into a maddeningly consistent response template—useful, infuriating, and often impossible:
+
+-   **ASSUMPTIONS** (what Elias failed to specify)
+-   **MINIMUM MATERIALS** (what he does *not* have)
+-   **PROCEDURE** (precise steps)
+-   **FAILURE MODES / STOP CONDITIONS** (how it can go wrong and when to abort)
+
+The first night is not about “fire,” it’s about **staying alive long enough to try again**: cold rain, shaking hands, and the humiliating discovery that even if he sparks an ember, he can’t keep it.
+
+A cave-lion encounter forces him into action. He survives through improvisation and a frantic sequence of better questions: how to reduce hypothermia risk, how to build a lean-to that sheds wind-driven rain, how to make cordage from nettle fiber, how to harden a wooden spear in heat without igniting it, and how to manage smoke so he doesn’t choke himself in a shelter.
+
+### The Tribe
+
+Elias is discovered and captured by a Cro-Magnon tribe—competent, wary, and politically complex. They call themselves the **Stonewater** people, river-season migrants who treat stored food as both power and responsibility. Among them is **Rena**, the chief’s niece—quietly observant, sharp with languages, and already watching Elias like a puzzle she intends to solve.
+
+Their suspicion is rational: outsiders bring disease, conflict, and spiritual destabilization. Elias’s clothes and speech mark him as unnatural. There’s an immediate, rigid rule he keeps breaking without understanding it: **you don’t speak while food is being portioned**. Elias, reflexively trying to “help,” blurts a suggestion about rationing—an attempt to optimize that reads as a power grab. He does it once, at the wrong moment, and the room goes silent in a way that feels like a verdict.
+
+Early attempts at “translation” are inconsistent and humiliating—phonetic mapping produces misinterpretations that nearly get him killed.
+
+### The First “Miracle,” With Consequences
+
+When the chief’s child is dying, Elias uses Oracle to identify a medicinal plant—after desperate, error-prone descriptions. He gets an answer that sounds like a recipe, not mercy.
+
+The child survives.
+
+But the miracle isn’t clean: the dosage is too aggressive, the child spends a night convulsing and vomiting, and an older patient given the same brew later crashes and dies. Elias expects gratitude; instead, the tribe reacts with fear and recalculation:
+
+-   The shaman frames Elias’s knowledge as a theft from the natural order.
+-   Some see salvation, others see contamination.
+-   Elias is protected, fed, and watched—kept close like a dangerous tool.
+
+Elias builds a small charcoal-and-sand water filtration setup and a smoke-managed shelter design that reduces illness. These “wins” save lives, but they also create a new power structure: whoever controls Elias controls survival.
+
+His first “civilization jump” is painfully unglamorous: an **ember box** (fungus tinder + insulated bark) so the tribe can carry fire between camps, and **reliable cordage** so they can make better traps, lash poles, and haul loads without constant failure. Each improvement makes him useful—and makes him dangerous.
+
+**End of Act I:** Elias is no longer expendable—but he is not trusted. He is labeled “Magician,” a title that keeps him alive and keeps him alone.
+
+* * *
+
+## Act II — The Architect of Progress (Bottlenecks + Dependency + Moral Drift)
+
+### Progress Is Painful, Not Magical
+
+Months pass. Elias becomes obsessed with “moving history forward,” but the world refuses montage:
+
+-   To get metal, he needs charcoal; to get charcoal, he needs timber and kilns; to get kilns, he needs clay and firing; to get firing, he needs steady heat and airflow control.
+-   Every step costs labor; labor requires food; food requires storage; storage attracts pests; pests attract predators.
+-   Irrigation increases yield but raises disease burden and changes social hierarchy.
+
+The bottlenecks become recurring set pieces:
+
+-   **Cordage bottleneck:** without good rope, every “design” is a sketch. With rope, everything becomes possible—and political.
+-   **Pottery bottleneck:** clay selection, cracking, firing temperature, and smoke control decide whether they can boil water safely and store grain.
+-   **Fire bottleneck:** keeping fire alive through storms and migration changes who holds leverage.
+-   **Storage bottleneck:** a granary invites mice; mice invite snakes; snakes invite fear; fear invites scapegoats.
+
+These aren’t background problems—they hit like scenes: a kiln load fails after days of fuel and labor, and suddenly “boil water” becomes a factional argument; a mouse bloom turns stored grain into a nightly war of traps, patrols, and accusations.
+
+Every technical advance introduces a new category of problems: ecological, logistical, political, ethical.
+
+### Human Anchor
+
+Elias forms a bond with one tribe member: **Rena**, the chief’s niece and an apprentice healer with a sharp memory for sounds and a stubborn intolerance for nonsense. She becomes his interpreter and moral ballast.
+
+Rena teaches Elias what Oracle cannot: status, taboo, negotiation, grief rituals, patience, and how a tribe survives through cohesion, not efficiency. She also teaches him the most important practical skill he keeps trying to skip: **how to ask humans questions without making enemies.**
+
+Elias begins to realize the tribe is not “behind.” They are optimized for this world in ways he is not.
+
+### The Dependency Spiral
+
+Under the pressure to deliver miracles, Elias increasingly outsources judgment to Oracle:
+
+-   He leans on Oracle for “risk assessment” and treats dissent as irrational noise.
+-   He stops learning language deeply and uses unreliable phonetic translation, creating social friction and accidental insults.
+-   He becomes more comfortable in his head than among people.
+
+When sickness returns, Oracle offers a clean containment protocol (isolate, destroy bedding, restrict contact, deny gatherings). Elias tries to implement it like a checklist—only to discover that, to the Stonewater, he’s not just preventing disease; he’s vandalizing grief.
+
+The more Elias leans on Oracle, the more he speaks in its shape: assumptions, procedures, failure modes—like people are systems that should stop malfunctioning.
+
+The humor continues, but darkens: Oracle’s precision enables Elias’s coldest impulses when he asks the wrong kind of question.
+
+### The Midpoint Shock: The Shadow Maker
+
+A scouting party returns decimated. Survivors describe a northern force led by a “Shadow Maker” who commands fire that doesn’t die and carries “sticks that throw thunder.”
+
+Elias interrogates the details (through Rena’s imperfect translation) and the shape becomes clearer—and worse:
+
+-   “Fire that doesn’t die” is **firekeeping as doctrine**: ember carriers, pitch torches, char cloth, and strict control of who may touch the coals.
+-   “Thunder sticks” are not rifles (not yet). They’re **clay flashpots** and crude black-powder charges used sparingly—more terror and disruption than precision killing.
+
+Rena’s account makes the limitation clear: the Rival’s blasts are rare, hoarded, and temperamental—because reliable powder demands ingredients and processing that are difficult to secure at scale (and dangerous to contain) without an industrial base. The terror is strategic, not mass-produced.
+
+Elias hears it and feels his stomach drop: he is not the only anomaly.
+
+Simultaneously, Elias’s earlier “progress” has destabilized his own tribe—factions form around metal tools and grain stores. A near-violent internal split reveals the cost of his “improvements.”
+
+### Moral Injury (the scar that matters)
+
+Terrified, Elias militarizes. He asks Oracle for weapon designs—crossbows, spiked defenses, incendiary control, fortification geometry. Oracle provides optimal plans and explicit tradeoffs.
+
+A preventable tragedy follows: during a rushed kiln firing meant to mass-produce cooking vessels, a shelter catches, the wind shifts, and the fire runs the camp edge. Someone dies saving the grain stores—because Elias prioritized the stores.
+
+Elias carries the guilt and notices something worse: the way Oracle’s language made the choice feel clean.
+
+That night, Oracle surfaces a corrupted diagnostic line without being asked—like a burp from the machinery behind the miracle:
+
+PROJECT ORACLE // TRANSFER EVENT: COMPLETE // SUBJECT: MERCER, ELIAS
+
+**End of Act II:** The village is more advanced and more fortified, but less whole. Elias has authority, but trust is fracturing beneath him.
+
+* * *
+
+## Act III — The Battle of Minds (Mirror Rival + Values Win)
+
+### The Rival Revealed
+
+The Rival Magician is a former operational strategist (military/logistics mind) who arrived through the same mysterious stranger. He has his own Oracle—equally powerful, equally amoral—and he has built an empire by aligning “stability” with domination.
+
+He even repeats the stranger’s phrasing—“Ask for constraints.”—but from his mouth it sounds like doctrine, not warning.
+
+The Rival is persuasive: he argues that control is mercy, that history must be steered to prevent future horrors. Some of Elias’s people are tempted because fear makes authoritarianism feel like relief.
+
+### War as Engineering (and as morale)
+
+The Rival invades to secure resources and eliminate the only competing “magician.” What follows is a competence-driven conflict:
+
+-   terrain manipulation, choke points, traps, fire breaks
+-   supply lines, food stores, weather timing
+-   morale, loyalty, and cultural cohesion as real battlefield variables
+
+The fights aren’t just “battle scenes”—they’re problem-solving under panic: a river ford seeded with concealed pits, a smoke-to-wind feint to split the Rival’s line, and a firebreak ring that turns the Shadow Maker’s favorite terror tool into dead weight.
+
+Both Oracles can compute tactics. Neither can manufacture courage.
+
+### The Oracle’s “Optimal” Sacrifice
+
+At the darkest point, Elias asks Oracle for the best path to victory. Oracle returns a technically sound plan that requires sacrificing a portion of the tribe to secure a decisive advantage.
+
+It presents the loss like math—minimum viable casualties, expected compliance rates, and “acceptable” noncombatant attrition—unless Elias explicitly forbids it.
+
+Elias finally sees the core truth: Oracle can optimize outcomes, but it cannot value people unless he explicitly encodes them as constraints. If he follows it now, he wins as a machine and loses as a human.
+
+### The Defining Choice
+
+Elias shuts off real-time consultation—not forever, but deliberately. He accepts imperfect information and chooses a plan rooted in trust:
+
+-   a simple pulley-and-weight trap and a terrain feint
+-   a risky maneuver dependent on coordinated bravery, not perfect calculation
+-   a leadership move that only works if his tribe believes in him
+
+He fights alongside his people, using their instincts and knowledge of the land—things Oracle cannot provide.
+
+### The Rival’s Collapse
+
+When the Rival bleeds and falters, his followers hesitate—fear-built loyalty fractures under stress. Elias’s people hold because their loyalty was earned through shared hardship and protection, not engineered through terror.
+
+The Rival is defeated. His “empire” destabilizes as the spell breaks.
+
+### Resolution
+
+The mysterious stranger remains unexplained—intentionally mythic. But the breadcrumbs now feel deliberate: a repeated phrase in the Rival’s mouth, a matching diagnostic header, a shared origin that can’t be coincidence.
+
+Elias, once desperate to return to 1966, realizes the question no longer defines him.
+
+He looks at what he has helped spark: not “modernity imported,” but a new branch of history—future knowledge filtered through ancient reality and human values.
+
+Elias keeps Oracle, but with strict boundaries. He returns to learning language, listening, and letting others lead where they are stronger. He finds peace not in being a god of technology, but in being part of a people—finally at home in the world he helped protect.
+
+* * *
+
+# Notes for Continuity (Optional Internal Guide)
+
+-   Keep “progress” grounded in repeated failure, seasons, labor constraints, and second-order consequences.
+-   Keep humor as pressure-release: brief, dry, competence-based—never undercutting tragedy.
+-   Maintain Oracle’s constraints rigorously; no perception and no morality are the core tension engines.
+-   Make the tribe competent and transformative; they change Elias as much as he changes them.

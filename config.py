@@ -12,11 +12,16 @@ def get_config() -> Dict:
     """Get the configuration for the agents"""
 
     # Basic config for local LLM
+    api_key = os.getenv("API_KEY")
+    # Treat the template placeholder as "unset" to avoid confusing false-positives.
+    if api_key in (None, "", "your_api_key_here"):
+        api_key = None
+
     config_list = [
         {
             "model": os.getenv("MODEL", "google/gemini-2.5-flash"),
             "base_url": os.getenv("BASE_URL", "https://openrouter.ai/api/v1"),
-            "api_key": os.getenv("API_KEY"),
+            "api_key": api_key,
         }
     ]
 
