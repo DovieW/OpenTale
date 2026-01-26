@@ -34,7 +34,10 @@ MASTER_PROMPT_FILE = os.path.join(BOOK_OUTPUT_DIR, f"master_prompt{TEXT_EXTENSIO
 SETTINGS_FILE = os.path.join(BOOK_OUTPUT_DIR, "settings.json")
 OUTLINE_JSON_FILE = os.path.join(BOOK_OUTPUT_DIR, "outline.json")
 CHAPTERS_DIR = os.path.join(BOOK_OUTPUT_DIR, "chapters")
-PREVIOUS_CHAPTER_CONTEXT_LENGTH = 2000
+# Continuity: 2k chars is often too small to include the actual end-state of the
+# previous chapter (especially with 1st-person voice + dialogue). Use a larger
+# default to reduce accidental repetition / timeline divergence.
+PREVIOUS_CHAPTER_CONTEXT_LENGTH = 8000
 
 app = Flask(__name__)
 app.secret_key = "ai-book-writer-secret-key"  # For session management
@@ -189,11 +192,24 @@ def get_previous_chapter_context(chapter_number):
 
     previous_context = ""
     if chapter_number > 1:
+        # Prefer the reviewed/edited version if it exists; otherwise fall back to
+        # the raw generated chapter.
+        prev_editor_path = os.path.join(
+            CHAPTERS_DIR,
+            f"chapter_{chapter_number - 1}_editor{TEXT_EXTENSION}",
+        )
         prev_chapter_path = os.path.join(
             CHAPTERS_DIR, f"chapter_{chapter_number - 1}{TEXT_EXTENSION}"
         )
-        if os.path.exists(prev_chapter_path):
-            with open(prev_chapter_path, "r", encoding="utf-8") as f:
+
+        prev_path = None
+        if os.path.exists(prev_editor_path) and os.path.getsize(prev_editor_path) > 0:
+            prev_path = prev_editor_path
+        elif os.path.exists(prev_chapter_path):
+            prev_path = prev_chapter_path
+
+        if prev_path:
+            with open(prev_path, "r", encoding="utf-8") as f:
                 content = f.read()
                 previous_context = content[-PREVIOUS_CHAPTER_CONTEXT_LENGTH:]
 
@@ -732,6 +748,14 @@ def chapter(chapter_number):
         world_theme = get_world_theme()
         characters = get_characters()
 
+        # Length requirement: keep long-form chapters, but enforce chapter boundaries
+        # in the prompt so the model expands within events instead of writing ahead.
+        settings = get_settings()
+        chapter_settings_for_length = settings.get("chapters", {}).get(str(chapter_number), {})
+        min_words = chapter_settings_for_length.get(
+            "min_words", settings.get("min_words", 5000)
+        )
+
         # Get context from the previous chapter to ensure continuity
         previous_context = get_previous_chapter_context(chapter_number)
 
@@ -761,6 +785,7 @@ def chapter(chapter_number):
                 previous_context=previous_context,
                 point_of_view=point_of_view,
                 tense=tense,
+                min_words=min_words,
             ),
         )
 
@@ -856,6 +881,13 @@ def _handle_chapter_stream(chapter_number, agent_name):
     world_theme = get_world_theme()
     characters = get_characters()
 
+    # Length requirement
+    settings = get_settings()
+    chapter_settings_for_length = settings.get("chapters", {}).get(str(chapter_number), {})
+    min_words = chapter_settings_for_length.get(
+        "min_words", settings.get("min_words", 5000)
+    )
+
     # Get context from the previous chapter to ensure continuity
     previous_context = get_previous_chapter_context(chapter_number)
 
@@ -891,6 +923,7 @@ def _handle_chapter_stream(chapter_number, agent_name):
         point_of_view=point_of_view,
         tense=tense,
         chapter_content=chapter_content,  # Included for editor
+        min_words=min_words,
     )
 
     # If requested, return the full prompt for debugging instead of generating
